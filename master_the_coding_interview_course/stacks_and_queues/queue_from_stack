@@ -1,0 +1,32 @@
+//Implement a queue using a stack
+const Stack = require('./stack_array_implementation');
+
+class Queue extends Stack{
+
+    constructor(){
+        super();
+    }
+    push(element){
+        if(this.length === 0){
+            this.data.push(element);
+            this.length++;
+        }else{
+            this.data.push(this.data[this.length - 1])
+            this.length++;
+            for(let i = this.length - 2; i > 0; i--){
+                this.data[i] = this.data[i - 1];
+            }
+            this.data[0] = element;
+        }
+        return this.length;
+    }
+}
+
+
+// const myQueue = new Queue();
+// console.log(myQueue.push(1));
+// console.log(myQueue.push(2));
+// console.log(myQueue.push(3));
+// console.log(myQueue.data);
+// console.log(myQueue.pop());
+// console.log(myQueue.data);
