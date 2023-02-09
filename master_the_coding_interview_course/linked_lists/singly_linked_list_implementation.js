@@ -137,3 +137,10 @@ class LinkedList{
         return data;
     }
 }
+
+
+
+module.exports = {
+    LinkedList,
+    Node
+}

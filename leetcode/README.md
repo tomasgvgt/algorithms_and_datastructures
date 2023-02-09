@@ -833,7 +833,7 @@ Constraints:
 
 ---
 
-12. Integer to roman
+# 12. Integer to roman
 
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
@@ -906,7 +906,7 @@ Constraints:
 
 ---
 
-383. Ransom note
+# 383. Ransom note
 
 Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise.
 
@@ -961,3 +961,155 @@ The number of nodes in the list is in the range [1, 105].
 0 <= Node.val <= 9
 
 ---
+
+# 232. Implement Queue using stacks
+
+mplement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).
+
+Implement the MyQueue class:
+
+void push(int x) Pushes element x to the back of the queue.
+int pop() Removes the element from the front of the queue and returns it.
+int peek() Returns the element at the front of the queue.
+boolean empty() Returns true if the queue is empty, false otherwise.
+Notes:
+
+You must use only standard operations of a stack, which means only push to top, peek/pop from top, size, and is empty operations are valid.
+Depending on your language, the stack may not be supported natively. You may simulate a stack using a list or deque (double-ended queue) as long as you use only a stack's standard operations.
+ 
+
+Example 1:
+
+Input
+["MyQueue", "push", "push", "peek", "pop", "empty"]
+[[], [1], [2], [], [], []]
+Output
+[null, null, null, 1, 1, false]
+
+Explanation
+MyQueue myQueue = new MyQueue();
+myQueue.push(1); // queue is: [1]
+myQueue.push(2); // queue is: [1, 2] (leftmost is front of the queue)
+myQueue.peek(); // return 1
+myQueue.pop(); // return 1, queue is [2]
+myQueue.empty(); // return false
+ 
+
+Constraints:
+
+1 <= x <= 9
+At most 100 calls will be made to push, pop, peek, and empty.
+All the calls to pop and peek are valid.
+
+---
+
+# 263. Ugly number
+
+An ugly number is a positive integer whose prime factors are limited to 2, 3, and 5.
+
+Given an integer n, return true if n is an ugly number.
+
+
+Example 1:
+
+Input: n = 6
+Output: true
+Explanation: 6 = 2 × 3
+Example 2:
+
+Input: n = 1
+Output: true
+Explanation: 1 has no prime factors, therefore all of its prime factors are limited to 2, 3, and 5.
+Example 3:
+
+Input: n = 14
+Output: false
+Explanation: 14 is not ugly since it includes the prime factor 7.
+ 
+
+Constraints:
+
+-231 <= n <= 231 - 1
+
+---
+
+# 190. Reverse bits
+
+Reverse bits of a given 32 bits unsigned integer.
+
+
+Example 1:
+
+Input: n = 00000010100101000001111010011100
+Output:    964176192 (00111001011110000010100101000000)
+Explanation: The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 which its binary representation is 00111001011110000010100101000000.
+Example 2:
+
+Input: n = 11111111111111111111111111111101
+Output:   3221225471 (10111111111111111111111111111111)
+Explanation: The input binary string 11111111111111111111111111111101 represents the unsigned integer 4294967293, so return 3221225471 which its binary representation is 10111111111111111111111111111111.
+ 
+
+Constraints:
+
+The input must be a binary string of length 32
+
+---
+
+# 191. Number of 1 Bits
+
+Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
+
+
+Example 1:
+
+Input: n = 00000000000000000000000000001011
+Output: 3
+Explanation: The input binary string 00000000000000000000000000001011 has a total of three '1' bits.
+Example 2:
+
+Input: n = 00000000000000000000000010000000
+Output: 1
+Explanation: The input binary string 00000000000000000000000010000000 has a total of one '1' bit.
+Example 3:
+
+Input: n = 11111111111111111111111111111101
+Output: 31
+Explanation: The input binary string 11111111111111111111111111111101 has a total of thirty one '1' bits.
+ 
+
+Constraints:
+
+The input must be a binary string of length 32.
+ 
+---
+
+# 206. Reverse a single linked list
+
+Given the head of a singly linked list, reverse the list, and return the reversed list.
+
+ 
+
+Example 1:
+
+
+Input: head = [1,2,3,4,5]
+Output: [5,4,3,2,1]
+Example 2:
+
+
+Input: head = [1,2]
+Output: [2,1]
+Example 3:
+
+Input: head = []
+Output: []
+ 
+
+Constraints:
+
+The number of nodes in the list is the range [0, 5000].
+-5000 <= Node.val <= 5000
+
+---
+
