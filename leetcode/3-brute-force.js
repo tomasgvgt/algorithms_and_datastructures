@@ -1,4 +1,8 @@
 /**
+ * Return the length of the longest substring inside a string.
+ * Brute force approach
+ */
+/**
  * @param {string} s
  * @return {number}
  */
